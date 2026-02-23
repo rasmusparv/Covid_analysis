@@ -36,9 +36,9 @@ def correlation(df, countrys):
         columns = ["new_cases_per_million", "new_deaths_per_million",
                   "total_vaccinations_per_hundred", "stringency_index"]
         abbreviations = {
-            "new_cases_per_million": "nakatumised",
-            "new_deaths_per_million": "surmad",
-            "total_vaccinations_per_hundred": "vaktsineerimisi",
+            "new_cases_per_million": "infection",
+            "new_deaths_per_million": "deaths",
+            "total_vaccinations_per_hundred": "vaccinations",
             "stringency_index": "piirangud"
         }
         correlation_matrix = data[columns].corr()
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     print("Welcome to Covid Analysis")
     while True:
         print("\nPress 1: One country analysis")
-        print("Press 2: Death analysis for multiple countries")
+        print("Press 2: Death rate for multiple countries")
         print("Press 3: Correlation on selected country")
         print("Press 4: Compare two countries")
         print("Press 5: Exit")

@@ -68,7 +68,7 @@ if __name__ == "__main__":
         print("Press 2: Death rate for multiple countries")
         print("Press 3: Correlation on selected country")
         print("Press 4: Compare two countries")
-        print("Press 5: Exit")
+        print("Press 5: Exit!")
         user_input = int(input("Enter number 1 - 5: "))
         if user_input == 1:
             choose_country = input("Enter country name: ")
